@@ -102,6 +102,9 @@ button:hover{
   display: flex;
   flex-direction: row;
 }
+.margin-auto{
+  margin: 0 auto;
+}
 .justify-c{
   justify-content: center;
 }
@@ -134,4 +137,28 @@ button:hover{
 }
 .ImgCard img{
   display: inline;
+}
+footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size:18px ;
+}
+footer .list{
+  width: 25%;
+  color: gray;
+}
+footer .list li{
+  margin: 5px 0;
+}
+footer .uptoDate{
+  width: 25%;
+}
+footer .uptoDate li{
+  display: inline-block;
+  margin: 0 10px;
+}
+footer h3{
+  font-weight: 700;
+  color: white;
 }

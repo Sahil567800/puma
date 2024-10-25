@@ -4,6 +4,7 @@ import Header from './header'
 import BannerSec from './bannersec'
 import ShoeSec from './shoeSec'
 import ImgSec from './imgsec'
+import Footer from './footer'
 function App() {
 
 
@@ -14,7 +15,8 @@ function App() {
       <ShoeSec />
       <ImgSec />
       <BannerSec/>
-     
+      <ImgSec />
+      <Footer/>
     </>
   )
 }
