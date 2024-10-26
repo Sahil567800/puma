@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+}
+.container{
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+header {
+  width: 100%;
+  height: 70px;
+}
+
+.bars {
+  width: 5%;
+  font-size: 25px;
+}
+
+.search {
+  width: 10%;
+}
+
+.search button {
+  border: 1px solid white;
+  padding: 5px 8px;
+  font-weight: bold;
+}
+.search button svg{
+  margin: 2px 5px;
+  font-size: 20px;
+}
+
+.logo {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.cart {
+  width: 15%;
+  display: flex;
+  font-size: 30px;
+  justify-content: end;
+}
+
+.cart svg {
+  margin: 0 15px;
+}
+#shoes-main{
+  width: 100%;
+}
+#bannerMain{
+  width: 100%;
+  display: block;
+  float: left;
+  position: relative;
+}
+.banner-img{
+  width: 100%;
+  display: block;
+  float: left;
+}
+.banner-text{
+  position:absolute;
+  top: 50%;
+  left: 2%;
+}
+.banner-text h2{
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+}
+.banner-text button{
+  background: white;
+    font-weight: bold;
+    margin: 10px 10px;
+    width: 120px;
+    height: 40px;
+}
+.banner-text .buttons{
+  text-align: center;
+}
+button:hover{
+  background-color: gray;
+}
+#imgSec{
+  width: 100%;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.justify-c{
+  justify-content: center;
+}
+.ImgCard{
+  margin: 20px auto;
+  width: 20%;
+  text-align: center;
+}
+#imgSec h1{
+  font-size: 35px;
+  font-weight: bolder;
+}
+#imgSec h4{
+  font-size: 20px;
+  color: gray;
+}
+.ImgCard h2{
+  font-size: 20px;
+  margin: 5px 0;
+  font-weight: 500;
+}
+.ImgCard button{
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px 0;
+}
+.ImgCard button:hover{
+  background-color: gray;
+}
+.ImgCard img{
+  display: inline;
+}
