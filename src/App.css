@@ -147,18 +147,41 @@ footer{
 footer .list{
   width: 25%;
   color: gray;
+  height: 285px;
 }
 footer .list li{
   margin: 5px 0;
 }
+footer .ulist{
+  width: 25%;
+  color: gray;
+}
+footer .ulist li{
+  margin: 5px 0;
+}
 footer .uptoDate{
   width: 25%;
+  height: 285px;
 }
 footer .uptoDate li{
   display: inline-block;
-  margin: 0 10px;
+  margin: 20px 20px;
+  font-size: x-small;
+  text-align: center;
 }
 footer h3{
   font-weight: 700;
   color: white;
+ margin: 8px 0;
+}
+footer svg{
+  font-size: x-large;
+}
+footer .fpuma{
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 5px 15px;
+}
+footer .fpuma img{
+  width: 30px;
 }
