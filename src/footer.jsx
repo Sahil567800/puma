@@ -1,11 +1,13 @@
 import { FaFacebook, FaYoutube, FaTwitter, FaPinterest, FaInstagram } from "react-icons/fa"
+import paymentImg from "./assets/payment.png"
 import logo from "./assets/pumalogo3.png";
+import indianFlag from "./assets/indian flag.png"
 const Footer = () => {
     return (
         <>
             <footer>
                 <div className="container">
-                    <div className="row margin-auto">
+                    <div className="row margin-auto paddingTB25 borderBottom">
                         <div className="list">
                             <ul>
                                 <h3>SUPPORT</h3>
@@ -58,9 +60,10 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="cards"></div>
-                        <div className="india"><img src="" alt="" /><button>INDIA</button></div>
+                    <div className="row paddingTB25">
+                        <div className="cards"><img src={paymentImg} alt="" /></div>
+                        <div className="india"><button><img src={indianFlag} alt="india" />INDIA</button></div>
+
                     </div>
                 </div>
             </footer>

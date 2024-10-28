@@ -6,21 +6,26 @@
   outline: none;
   list-style: none;
 }
-.container{
+
+.container {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
 }
-.row{
+
+.row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   padding: 10px 0;
 }
+
 header {
   width: 100%;
-  height: 70px;
+  height: 80px;
+  padding: 5px 0;
 }
 
 .bars {
@@ -37,7 +42,8 @@ header {
   padding: 5px 8px;
   font-weight: bold;
 }
-.search button svg{
+
+.search button svg {
   margin: 2px 5px;
   font-size: 20px;
 }
@@ -58,130 +64,194 @@ header {
 .cart svg {
   margin: 0 15px;
 }
-#shoes-main{
+
+#shoes-main {
   width: 100%;
 }
-#bannerMain{
+
+#bannerMain {
   width: 100%;
   display: block;
   float: left;
   position: relative;
 }
-.banner-img{
+
+.banner-img {
   width: 100%;
   display: block;
   float: left;
 }
-.banner-text{
-  position:absolute;
+
+.banner-text {
+  position: absolute;
   top: 50%;
   left: 2%;
 }
-.banner-text h2{
+
+.banner-text h2 {
   font-size: 35px;
   color: white;
   font-weight: bold;
 }
-.banner-text button{
-  background: white;
-    font-weight: bold;
-    margin: 10px 10px;
-    width: 120px;
-    height: 40px;
+.banner-text h4{
+  FONT-SIZE: x-large;
+    color: white;
 }
-.banner-text .buttons{
+.banner-text button {
+  background: white;
+  font-weight: bold;
+  margin: 10px 0px;
+  width: 120px;
+  height: 40px;
+}
+
+.banner-text .buttons {
   text-align: center;
 }
-button:hover{
+
+button:hover {
   background-color: gray;
 }
-#imgSec{
+
+#imgSec {
   width: 100%;
 }
-.row{
+
+.row {
   display: flex;
   flex-direction: row;
 }
-.margin-auto{
+
+.margin-auto {
   margin: 0 auto;
 }
-.justify-c{
+
+.justify-c {
   justify-content: center;
 }
-.ImgCard{
+
+.ImgCard {
   margin: 20px auto;
   width: 20%;
   text-align: center;
 }
-#imgSec h1{
+
+#imgSec h1 {
   font-size: 35px;
   font-weight: bolder;
 }
-#imgSec h4{
+
+#imgSec h4 {
   font-size: 20px;
   color: gray;
 }
-.ImgCard h2{
+
+.ImgCard h2 {
   font-size: 20px;
   margin: 5px 0;
   font-weight: 500;
 }
-.ImgCard button{
+
+.ImgCard button {
   background: black;
   color: white;
   padding: 10px 20px;
   margin: 5px 0;
 }
-.ImgCard button:hover{
+
+.ImgCard button:hover {
   background-color: gray;
 }
-.ImgCard img{
+
+.ImgCard img {
   display: inline;
 }
-footer{
+
+footer {
   width: 100%;
   background-color: black;
   color: white;
-  font-size:18px ;
+  font-size: 18px;
 }
-footer .list{
+
+footer .list {
   width: 25%;
   color: gray;
   height: 285px;
 }
-footer .list li{
+
+footer .list li {
   margin: 5px 0;
 }
-footer .ulist{
+
+footer .ulist {
   width: 25%;
   color: gray;
 }
-footer .ulist li{
+
+footer .ulist li {
   margin: 5px 0;
 }
-footer .uptoDate{
+
+footer .uptoDate {
   width: 25%;
   height: 285px;
 }
-footer .uptoDate li{
+
+footer .uptoDate li {
   display: inline-block;
   margin: 20px 20px;
   font-size: x-small;
   text-align: center;
 }
-footer h3{
+
+footer h3 {
   font-weight: 700;
   color: white;
- margin: 8px 0;
+  margin: 8px 0;
 }
-footer svg{
+
+footer svg {
   font-size: x-large;
 }
-footer .fpuma{
+
+footer .fpuma {
   border: 1px solid gray;
   border-radius: 8px;
   padding: 5px 15px;
 }
-footer .fpuma img{
+
+footer .fpuma img {
   width: 30px;
+}
+
+footer .cards {
+  width: 50%;
+}
+
+footer .india {
+  width: 50%;
+  display: flex;
+}
+
+footer .india img {
+  width: 30px;
+  border-radius: 50%;
+  height: 30px;
+
+}
+
+footer .india button {
+  display: flex;
+  border: 1px solid gray;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 25px;
+  font-weight: bold;
+}
+.paddingTB25{
+  padding: 25px 0;
+}
+.borderBottom{
+  border-bottom: 1px solid gray;
 }
