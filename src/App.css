@@ -36,6 +36,9 @@ header {
 .search {
   width: 10%;
 }
+.m-search{
+  display: none;
+}
 
 .search button {
   border: 1px solid white;
@@ -254,4 +257,47 @@ footer .india button {
 }
 .borderBottom{
   border-bottom: 1px solid gray;
+}
+
+@media only screen and (max-width:767px) {
+  .container{
+    max-width: 420px;
+  }
+  .bars{
+    width: 15%;
+  }
+  .logo{
+    width: 40%;
+  }
+  .search{
+    display: none;
+  }
+  .m-search{
+    display: block;
+    width: 15%;
+    font-size: x-large;
+  }
+  .cart{
+    width: 30%;
+  }
+  .banner-text{
+    display: block;
+    text-align: center;
+    position: static;
+    float: left;
+    width: 100%;
+    padding: 15px 0;
+  }
+  .banner-text h2{
+    color: black;
+    font-size: 25px;
+  }
+  .banner-text h4{
+    color: gray;
+    font-size: large;
+  }
+  .banner-text button{
+    background-color: black;
+    color: white;
+  }
 }
