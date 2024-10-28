@@ -9,8 +9,8 @@ const Footer = () => {
                 <div className="container">
                     <div className="row margin-auto paddingTB25 borderBottom">
                         <div className="list">
+                            <h3>SUPPORT</h3>
                             <ul>
-                                <h3>SUPPORT</h3>
                                 <li>Contact us</li>
                                 <li>Promotions & Sale</li>
                                 <li>Track Order</li>
@@ -32,8 +32,8 @@ const Footer = () => {
 
                         </div>
                         <div className="list">
+                            <h3>ABOUT</h3>
                             <ul>
-                                <h3>ABOUT</h3>
                                 <li>Company</li>
                                 <li>Corporate News</li>
                                 <li>Press Center</li>
