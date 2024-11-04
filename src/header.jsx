@@ -13,11 +13,16 @@ const Header = () => {
                     <div className="bars"><FaBars /></div>
                 <div className="search"><button className="flex"><FaMagnifyingGlass/>SEARCH</button></div>
                 <div className="m-search"><FaMagnifyingGlass/></div>
+                <div className="search-bar">
+            <input type="text"  placeholder="ENTER PRODUCT NAME"/>
+            <button><FaMagnifyingGlass/></button>
+            </div>
+               
                 <div className="logo"> <img src={logo} alt="" width={"50px"} /></div>
                 <div className="cart"><MdAccountCircle /><FaShoppingCart /></div>
                     </div>
                 </div>
-               
+          
                
             </header>
 

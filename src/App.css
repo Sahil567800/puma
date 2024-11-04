@@ -34,12 +34,25 @@ header {
 }
 
 .search {
-  width: 10%;
+  width: 30%;
+  display: none;
 }
 .m-search{
   display: none;
 }
-
+.search-bar{
+ width: 30%;
+ text-align: center;
+}
+.search-bar input{
+  width: 65%;
+  padding: 10px;
+}
+.search-bar button{
+  background: gray;
+  padding: 14px;
+  vertical-align: bottom;
+}
 .search button {
   border: 1px solid white;
   padding: 5px 8px;
@@ -52,13 +65,13 @@ header {
 }
 
 .logo {
-  width: 70%;
+  width: 15%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 
 .cart {
-  width: 15%;
+  width: 50%;
   display: flex;
   font-size: 30px;
   justify-content: end;
@@ -258,7 +271,61 @@ footer .india button {
 .borderBottom{
   border-bottom: 1px solid gray;
 }
+#BuySec{
+  width: 100%;
+}
+.buyImg img{
+  width: 100%;
+}
+.buyImg{
+  width: 50%;
+}
+.buyText{
+  width: 50%;
+  align-self: start;
+}
+#BuySec h1{
+  font-size: 1.5rem;
+  font-weight :700;
+}
+.buyText h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.buyText h3{
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 15px 0;
 
+}
+.buyText h4{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 0;
+
+}
+.buyText p{
+  color: gray;
+  margin: 5px 0;
+  font-size: 1.25rem;
+  margin: 15px 0;
+}
+.buyText button{
+  display: block;
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  margin: 15px 0;
+  font-weight:bold;
+}
+.buyText button:hover{
+  background-color: gray;
+}
+.none{
+  display: none;
+}
 /* phone-view */
 @media only screen and (max-width:767px) {
   .container{
@@ -269,6 +336,7 @@ footer .india button {
   }
   .logo{
     width: 40%;
+    justify-content: center;
   }
   .search{
     display: none;
@@ -277,6 +345,9 @@ footer .india button {
     display: block;
     width: 15%;
     font-size: x-large;
+  }
+  .search-bar{
+    display: none;
   }
   .cart{
     width: 30%;
@@ -300,6 +371,9 @@ footer .india button {
   .banner-text button{
     background-color: black;
     color: white;
+  }
+  .ImgCard{
+    width: 40%;
   }
 }
 

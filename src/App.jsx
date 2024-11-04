@@ -28,6 +28,7 @@ import shoe5 from "./assets/shoe7.avif"
 import shoe6 from "./assets/shoe8.avif"
 import shoe7 from "./assets/shoe9.avif"
 import shoe8 from "./assets/shoe10.avif"
+import { BuySec } from './buysec.jsx'
 
 
 function App() {
@@ -45,7 +46,7 @@ function App() {
       </ShoeSec>
       <ImgSec >
         <ImgCard img={cardImg1} title="STREETWEAR STAPLES" button="SHOP NOW" />
-        <ImgCard img={cardImg2} title="NIGHTOUT LOOKS" button="SHOP NOW" />
+        <ImgCard img={cardImg2} title="THE SCRIBBLE PACK" button="SHOP NOW" />
         <ImgCard img={cardImg3} title="PLAYFUL OUTINGS" button="SHOP NOW" />
         <ImgCard img={cardImg4} title="THE FESTIVE EDIT" button="SHOP NOW" />
       </ImgSec>
@@ -54,7 +55,7 @@ function App() {
       <ImgCard img={cardImg5} title="PUMA SPEEDCAT" button="SHOP NOW" />
         <ImgCard img={cardImg6} title="WINTERWEAR" button="SHOP NOW" />
         <ImgCard img={cardImg7} title="PUMA X LMC" button="SHOP NOW" />
-        <ImgCard img={cardImg8} title="THE SCRIBBLE PACK" button="SHOP NOW" />
+        <ImgCard img={cardImg8} title="NIGHTOUT LOOKS" button="SHOP NOW" />
       </ImgSec>
       <ShoeSec heading ="PUMA HIGHLIGHTS">
       <ShoeCard price="₹1,399" dprice="₹5,499" shoeimg={shoe5} name="PUMA SMASHIC Unisex Sneakers" />
@@ -62,6 +63,7 @@ function App() {
         <ShoeCard price="₹4,199" dprice="₹5,499" shoeimg={shoe7} name="PUMA CAVON 2.0 Unisex sneakers"  />
         <ShoeCard price="₹2,919" dprice="₹6,499" shoeimg={shoe8} name="PUMA GRAVITON 2.0 Unisex sneakers" />
       </ShoeSec>
+      <BuySec/>
       <Footer />
     </>
   )
