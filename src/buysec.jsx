@@ -4,11 +4,11 @@ export const BuySec = () => {
     return (
         <>
             <section id="BuySec">
-                <div className="container">
-                    <div className="row">
+                <div className="continer">
+                    <div className="raw">
                         <h1>MEN`S</h1>
                         </div>
-                    <div className="row">
+                    <div className="raw column">
                         <div className="buyImg">
                             <img src={shoe1} alt="" />
                         </div>

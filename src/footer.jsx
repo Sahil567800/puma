@@ -2,12 +2,13 @@ import { FaFacebook, FaYoutube, FaTwitter, FaPinterest, FaInstagram } from "reac
 import paymentImg from "./assets/payment.png"
 import logo from "./assets/pumalogo3.png";
 import indianFlag from "./assets/indian flag.png"
+
 const Footer = () => {
     return (
         <>
             <footer>
-                <div className="container">
-                    <div className="row margin-auto paddingTB25 borderBottom">
+                <div className="continer">
+                    <div className="raw margin-auto paddingTB25 borderBottom column">
                         <div className="list">
                             <h3>SUPPORT</h3>
                             <ul>
@@ -60,9 +61,9 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="row paddingTB25">
-                        <div className="cards"><img src={paymentImg} alt="" /></div>
-                        <div className="india"><button><img src={indianFlag} alt="india" />INDIA</button></div>
+                    <div className="raw  column">
+                        <div className="cards paddingTB25"><img src={paymentImg} alt="" /></div>
+                        <div className="india paddingTB25"><button><img src={indianFlag} alt="india" />INDIA</button></div>
 
                     </div>
                 </div>

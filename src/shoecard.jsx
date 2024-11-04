@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 const ShoeCard = (props)=>{
     return(
         <>
-        <div className=" w-72 mx-auto">
+        <div className=" w-72 mx-auto" id="shoeCard">
             <img className="w-72 h-72 my-2" src={props.shoeimg} alt="" />
             <div className="flex my-4">
             <h3 className=" font-bold">{props.name}</h3>

@@ -4,14 +4,14 @@ const ImgSec = (props) => {
     return (
         <>
             <section id="imgSec">
-                <div className="container">
-                    <div className="row justify-c">
+                <div className="continer">
+                    <div className="raw justify-c">
                         <h1>PALERMO PLAYBOOK</h1>
                     </div>
-                    <div className="row justify-c">
+                    <div className="raw justify-c">
                     <h4>style `em your way</h4>
                 </div>
-                <div className="row">
+                <div className="raw">
                     {props.children}
                 </div>
                 </div>

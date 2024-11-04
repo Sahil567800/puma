@@ -7,13 +7,13 @@
   list-style: none;
 }
 
-.container {
+.continer {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
 }
 
-.row {
+.raw {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -26,6 +26,7 @@ header {
   width: 100%;
   height: 80px;
   padding: 5px 0;
+  cursor: pointer;
 }
 
 .bars {
@@ -35,7 +36,6 @@ header {
 
 .search {
   width: 30%;
-  display: none;
 }
 .m-search{
   display: none;
@@ -193,7 +193,7 @@ footer {
 footer .list {
   width: 25%;
   color: gray;
-  height: 285px;
+ align-self: start;
 }
 
 footer .list li {
@@ -211,7 +211,7 @@ footer .ulist li {
 
 footer .uptoDate {
   width: 25%;
-  height: 285px;
+ align-self: start;
 }
 
 footer .uptoDate li {
@@ -328,7 +328,7 @@ footer .india button {
 }
 /* phone-view */
 @media only screen and (max-width:767px) {
-  .container{
+  .continer{
     max-width: 420px;
   }
   .bars{
@@ -375,11 +375,45 @@ footer .india button {
   .ImgCard{
     width: 40%;
   }
+  footer .list ul{
+    display: none;
+  }
+  footer  .ulist{
+    display: none;
+  }
+  footer .uptoDate ul{
+    display: none;
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+  }
+  .india{
+    width: 100%;
+    justify-content: center;
+  }
+  .cards{
+    width: 100%;
+    justify-content: center;
+    
+  }
+  #shoeCard{
+    width: 45%;
+  }
+  .buyImg{
+    width: 100%;
+  }
+  .buyText{
+    width: 100%;
+  }
+  footer .india button{
+    padding: 10px 50px;
+  }
 }
 
 /* tab view */
 @media only screen and (min-width:768px) and (max-width:1080px){
- .container{
+ .continer{
   max-width: 1024px;
  } 
 }

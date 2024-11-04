@@ -4,11 +4,11 @@ const ShoeSec = (props) => {
   return (
     <>
       <section className='w-full'>
-        <div className="container">
+        <div className="continer">
           <div className="row">
             <h2 className='heading text-2xl font-bold my-6 justify-center'>{props.heading}</h2>
           </div>
-          <div className="row ">
+          <div className="raw ">
             {props.children}
           </div>
         </div>
