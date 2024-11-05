@@ -5,17 +5,21 @@ import { MdAccountCircle } from "react-icons/md";
 import { FaShoppingCart } from "react-icons/fa";
 import { useState } from "react";
 const Header = () => {
-    const [searchToggle,setSearch] = useState(false)
-    const toggleSearch=()=>{
+    const [searchToggle, setSearch] = useState(false)
+    const [inputChange, setInputChange] = useState("")
+    const handleChange = (e) => {
+        setInputChange(e.target.value)
+    }
+    const toggleSearch = () => {
         setSearch(true)
     }
     let search;
     if (!searchToggle) {
-        search = <div className="search"><button className="flex" onClick={()=>toggleSearch()}><FaMagnifyingGlass />SEARCH</button></div>
+        search = <div className="search"><button className="flex" onClick={() => toggleSearch()}><FaMagnifyingGlass />SEARCH</button></div>
     }
     else {
         search = <div className="search-bar">
-            <input type="text" placeholder="ENTER PRODUCT NAME" />
+            <input type="text" placeholder="ENTER PRODUCT NAME" value={inputChange} onChange={handleChange} />
             <button><FaMagnifyingGlass /></button>
         </div>
     }
@@ -27,8 +31,6 @@ const Header = () => {
                         <div className="bars"><FaBars /></div>
                         {search}
                         <div className="m-search"><FaMagnifyingGlass /></div>
-
-
                         <div className="logo"> <img src={logo} alt="" width={"50px"} /></div>
                         <div className="cart"><MdAccountCircle /><FaShoppingCart /></div>
                     </div>

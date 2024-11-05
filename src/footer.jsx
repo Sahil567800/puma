@@ -2,16 +2,24 @@ import { FaFacebook, FaYoutube, FaTwitter, FaPinterest, FaInstagram } from "reac
 import paymentImg from "./assets/payment.png"
 import logo from "./assets/pumalogo3.png";
 import indianFlag from "./assets/indian flag.png"
+import { FaAngleDown } from "react-icons/fa";
+import { useState } from "react";
+
 
 const Footer = () => {
+    const [active, setActive] = useState(undefined);
+    const handleClick = () => {
+        setActive(!active)
+    }
+   
     return (
         <>
             <footer>
                 <div className="continer">
                     <div className="raw margin-auto paddingTB25 borderBottom column">
-                        <div className="list">
-                            <h3>SUPPORT</h3>
-                            <ul>
+                        <div className={`list `}>
+                            <div className="heading" onClick={() => handleClick()}> <h3>SUPPORT </h3><FaAngleDown /></div>
+                            <ul className={`${!active?"none":"active:"}`}>
                                 <li>Contact us</li>
                                 <li>Promotions & Sale</li>
                                 <li>Track Order</li>
@@ -21,7 +29,7 @@ const Footer = () => {
                                 <li>Cookie Settings</li>
                             </ul>
                         </div>
-                        <div className="ulist">
+                        <div className={`ulist ${!active?"none":"active:"}`}>
                             <ul>
                                 <li>FAQs</li>
                                 <li>My Account</li>
@@ -33,8 +41,8 @@ const Footer = () => {
 
                         </div>
                         <div className="list">
-                            <h3>ABOUT</h3>
-                            <ul>
+                            <div className="heading"><h3>ABOUT </h3><FaAngleDown /></div>
+                            <ul className={`${!active?"none":"active:"}`}>
                                 <li>Company</li>
                                 <li>Corporate News</li>
                                 <li>Press Center</li>
@@ -46,7 +54,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="uptoDate">
-                            <h3>STAY UPTO DATE</h3>
+                            <div className="heading"> <h3>STAY UPTO DATE </h3><FaAngleDown /></div>
                             <ul>
                                 <li> <FaFacebook /></li>
                                 <li><FaYoutube /></li>
@@ -54,7 +62,7 @@ const Footer = () => {
                                 <li><FaPinterest /></li>
                                 <li><FaTwitter /></li>
                             </ul>
-                            <h3>EXPLORE</h3>
+                            <div className="heading"><h3>EXPLORE </h3><FaAngleDown /></div>
                             <ul>
                                 <li><div className="fpuma"><img src={logo} alt="" /><h4>APP</h4></div></li>
                                 <li><div className="fpuma"><img src={logo} alt="" /><h4>APP</h4></div></li>

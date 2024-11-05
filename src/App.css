@@ -42,11 +42,12 @@ header {
 }
 .search-bar{
  width: 30%;
- text-align: center;
 }
 .search-bar input{
   width: 65%;
   padding: 10px;
+  color: black;
+  outline: none;
 }
 .search-bar button{
   background: gray;
@@ -256,6 +257,9 @@ footer .india img {
   height: 30px;
 
 }
+footer .heading svg{
+  display: none;
+}
 
 footer .india button {
   display: flex;
@@ -326,6 +330,9 @@ footer .india button {
 .none{
   display: none;
 }
+.active{
+  display: block;
+}
 /* phone-view */
 @media only screen and (max-width:767px) {
   .continer{
@@ -375,14 +382,29 @@ footer .india button {
   .ImgCard{
     width: 40%;
   }
-  footer .list ul{
-    display: none;
-  }
-  footer  .ulist{
-    display: none;
-  }
+  
   footer .uptoDate ul{
     display: none;
+  }
+  footer .heading{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  footer .list{
+    width: 100%;
+  }
+  footer .ulist{
+    width: 100%;
+  }
+ 
+  footer .uptoDate{
+    width: 100%;
+  }
+  footer .heading svg{
+    display: block;
+    align-self: center;
+    color: white;
   }
   .column{
     display: flex;
