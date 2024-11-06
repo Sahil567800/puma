@@ -4,7 +4,7 @@ import logo from "./assets/pumalogo3.png";
 import indianFlag from "./assets/indian flag.png"
 import { FaAngleDown } from "react-icons/fa";
 import { useState } from "react";
-
+import { Ul } from "./ul";
 
 const Footer = () => {
     const [active, setActive] = useState(undefined);
@@ -19,7 +19,7 @@ const Footer = () => {
                     <div className="raw margin-auto paddingTB25 borderBottom column">
                         <div className={`list `}>
                             <div className="heading" onClick={() => handleClick()}> <h3>SUPPORT </h3><FaAngleDown /></div>
-                            <ul className={`${!active?"none":"active:"}`}>
+                            <Ul className={`${!active?"none":"active:"}`}>
                                 <li>Contact us</li>
                                 <li>Promotions & Sale</li>
                                 <li>Track Order</li>
@@ -27,22 +27,22 @@ const Footer = () => {
                                 <li>Tech Glossary</li>
                                 <li>Initiate Return / Exchange</li>
                                 <li>Cookie Settings</li>
-                            </ul>
+                            </Ul>
                         </div>
-                        <div className={`ulist ${!active?"none":"active:"}`}>
-                            <ul>
+                        <div className={`ulist`}>
+                            <Ul className={`${!active?"none":"active:"}`}>
                                 <li>FAQs</li>
                                 <li>My Account</li>
                                 <li>Exchange & Return Policy</li>
                                 <li>Privacy Policy</li>
                                 <li>Terms & Conditions</li>
                                 <li>Sneakers</li>
-                            </ul>
+                            </Ul>
 
                         </div>
                         <div className="list">
-                            <div className="heading"><h3>ABOUT </h3><FaAngleDown /></div>
-                            <ul className={`${!active?"none":"active:"}`}>
+                            <div className="heading "onClick={() => handleClick()}><h3>ABOUT </h3><FaAngleDown /></div>
+                            <Ul className={`${!active?"none":"active:"}`}>
                                 <li>Company</li>
                                 <li>Corporate News</li>
                                 <li>Press Center</li>
@@ -51,22 +51,22 @@ const Footer = () => {
                                 <li>Careers</li>
                                 <li>Store Locator</li>
                                 <li>PUMA Articles</li>
-                            </ul>
+                            </Ul>
                         </div>
                         <div className="uptoDate">
-                            <div className="heading"> <h3>STAY UPTO DATE </h3><FaAngleDown /></div>
-                            <ul>
+                            <div className="heading" onClick={() => handleClick()}> <h3>STAY UPTO DATE </h3><FaAngleDown /></div>
+                            <Ul className={`${!active?"none":"active:"}`}>
                                 <li> <FaFacebook /></li>
                                 <li><FaYoutube /></li>
                                 <li><FaInstagram /></li>
                                 <li><FaPinterest /></li>
                                 <li><FaTwitter /></li>
-                            </ul>
-                            <div className="heading"><h3>EXPLORE </h3><FaAngleDown /></div>
-                            <ul>
+                            </Ul>
+                            <div className="heading" onClick={() => handleClick()}><h3>EXPLORE </h3><FaAngleDown /></div>
+                            <Ul className={`${!active?"none":"active:"}`}>
                                 <li><div className="fpuma"><img src={logo} alt="" /><h4>APP</h4></div></li>
                                 <li><div className="fpuma"><img src={logo} alt="" /><h4>APP</h4></div></li>
-                            </ul>
+                            </Ul>
                         </div>
                     </div>
                     <div className="raw  column">

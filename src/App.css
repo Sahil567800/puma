@@ -327,9 +327,7 @@ footer .india button {
 .buyText button:hover{
   background-color: gray;
 }
-.none{
-  display: none;
-}
+
 .active{
   display: block;
 }
@@ -337,6 +335,9 @@ footer .india button {
 @media only screen and (max-width:767px) {
   .continer{
     max-width: 420px;
+  }
+  .none{
+    display: none;
   }
   .bars{
     width: 15%;
@@ -381,10 +382,6 @@ footer .india button {
   }
   .ImgCard{
     width: 40%;
-  }
-  
-  footer .uptoDate ul{
-    display: none;
   }
   footer .heading{
     display: flex;
@@ -438,4 +435,105 @@ footer .india button {
  .continer{
   max-width: 1024px;
  } 
+ .none{
+  display: none;
 }
+.bars{
+  width: 15%;
+}
+.logo{
+  width: 40%;
+  justify-content: center;
+}
+.search{
+  display: none;
+}
+.m-search{
+  display: block;
+  width: 15%;
+  font-size: x-large;
+}
+.search-bar{
+  display: none;
+}
+.cart{
+  width: 30%;
+}
+.banner-text{
+  display: block;
+  text-align: center;
+  position: static;
+  float: left;
+  width: 100%;
+  padding: 15px 0;
+}
+.banner-text h2{
+  color: black;
+  font-size: 25px;
+}
+.banner-text h4{
+  color: gray;
+  font-size: large;
+}
+.banner-text button{
+  background-color: black;
+  color: white;
+}
+.ImgCard{
+  width: 40%;
+}
+
+footer .heading{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+footer .list{
+  width: 100%;
+}
+footer .ulist{
+  width: 100%;
+}
+
+footer .uptoDate{
+  width: 100%;
+}
+footer .heading svg{
+  display: block;
+  align-self: center;
+  color: white;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.india{
+  width: 100%;
+  justify-content: center;
+}
+.cards{
+  width: 100%;
+}
+.cards img{
+  margin: 0 auto;
+}
+#shoeCard{
+  width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#shoeText{
+  flex-direction: column;
+}
+.buyImg{
+  width: 100%;
+}
+.buyText{
+  width: 100%;
+}
+footer .india button{
+  padding: 10px 50px;
+}
+}
+

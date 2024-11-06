@@ -4,7 +4,7 @@ const ShoeCard = (props)=>{
         <>
         <div className=" w-72 mx-auto" id="shoeCard">
             <img className="w-72 h-72 my-2" src={props.shoeimg} alt="" />
-            <div className="flex my-4">
+            <div className="flex my-4" id="shoeText">
             <h3 className=" font-bold">{props.name}</h3>
             <div className="flex flex-col">
             <h3 className=" font-bold text-red-700">{props.price}</h3>

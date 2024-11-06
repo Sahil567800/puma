@@ -28,7 +28,6 @@ import shoe5 from "./assets/shoe7.avif"
 import shoe6 from "./assets/shoe8.avif"
 import shoe7 from "./assets/shoe9.avif"
 import shoe8 from "./assets/shoe10.avif"
-import { BuySec } from './buysec.jsx'
 
 
 function App() {
@@ -63,7 +62,6 @@ function App() {
         <ShoeCard price="₹4,199" dprice="₹5,499" shoeimg={shoe7} name="PUMA CAVON 2.0 Unisex sneakers"  />
         <ShoeCard price="₹2,919" dprice="₹6,499" shoeimg={shoe8} name="PUMA GRAVITON 2.0 Unisex sneakers" />
       </ShoeSec>
-      <BuySec/>
       <Footer />
     </>
   )
