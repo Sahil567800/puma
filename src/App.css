@@ -24,7 +24,6 @@
 
 header {
   width: 100%;
-  height: 80px;
   padding: 5px 0;
   cursor: pointer;
 }
@@ -32,6 +31,19 @@ header {
 .bars {
   width: 5%;
   font-size: 25px;
+}
+.None{
+  display: none;
+}
+.flex{
+  display: flex;
+}
+nav{
+  display: flex;
+ font-weight: 600;
+}
+nav li{
+  margin: 0 10px;
 }
 
 .search {
