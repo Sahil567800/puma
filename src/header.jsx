@@ -5,6 +5,7 @@ import { MdAccountCircle } from "react-icons/md";
 import { FaShoppingCart } from "react-icons/fa";
 import { useState } from "react";
 import { FaAngleUp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Header = () => {
     const [searchToggle, setSearch] = useState(false)
     const [inputChange, setInputChange] = useState("")
@@ -26,15 +27,18 @@ const Header = () => {
     let mSearch;
     if (!searchToggle) {
         search = <div className="search"><button className="flex" onClick={() => toggleSearch()}>SEARCH</button></div>
-        mSearch =<FaMagnifyingGlass/>
+        mSearch = <div className="m-search " onClick={()=>toggleSearch()}><FaMagnifyingGlass /></div> 
     }
     else {
         search = <div className="search-bar">
             <input type="text" placeholder="ENTER PRODUCT NAME" value={inputChange} onChange={handleChange} />
             <button><FaMagnifyingGlass /></button>
         </div>
-        mSearch = 
-        <input type="text" placeholder="ENTER PRODUCT NAME" value={inputChange} onChange={handleChange} />
+        mSearch = <div className="mSearch-bar">
+            <input type="text" placeholder="ENTER PRODUCT NAME" value={inputChange} onChange={handleChange} />
+            <button><FaMagnifyingGlass /></button>
+        </div>
+        
     }
   
     return (
@@ -44,14 +48,14 @@ const Header = () => {
                     <div className="raw">
                         <div className="bars"  onClick={handleNav}>{bars}</div>
                         {search}
-                        <div className="m-search" onClick={()=>handleChange()}>{mSearch}</div>
+                        {mSearch}
                         <div className="logo"> <img src={logo} alt="" width={"50px"} /></div>
                         <div className="cart"><MdAccountCircle /><FaShoppingCart /></div>
                     </div>
                     <div className="raw">
                         <nav className={`${!isnav?"None":"flex"}`}>
-                        <li>Home</li>
-                        <li>About</li>
+                        <li><Link to="/"/>Home</li>
+                        <li><Link to="/BuySec"/>About</li>
                         <li>Services</li>
                         <li>Products</li>
                         <li>Contact uS</li>

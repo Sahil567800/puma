@@ -52,6 +52,9 @@ nav li{
 .m-search{
   display: none;
 }
+.mSearch-bar{
+  display: none;
+}
 .search-bar{
  width: 30%;
 }
@@ -352,7 +355,7 @@ footer .india button {
     display: none;
   }
   .bars{
-    width: 15%;
+    width: 10%;
   }
   .logo{
     width: 40%;
@@ -361,11 +364,27 @@ footer .india button {
   .search{
     display: none;
   }
+  .mSearch-bar{
+    display: flex;
+    width: 20%;
+  }
+  .mSearch-bar input{
+    width: 65%;
+    padding: 10px;
+    color: black;
+    outline: none;
+  }
+  .mSearch-bar button{
+    background: gray;
+    padding: 5px;
+    vertical-align: bottom;
+  }
   .m-search{
     display: block;
-    width: 15%;
+    width: 20%;
     font-size: x-large;
   }
+ 
   .search-bar{
     display: none;
   }
@@ -451,7 +470,7 @@ footer .india button {
   display: none;
 }
 .bars{
-  width: 15%;
+  width: 5%;
 }
 .logo{
   width: 40%;
@@ -467,6 +486,21 @@ footer .india button {
 }
 .search-bar{
   display: none;
+}
+.mSearch-bar{
+  display: flex;
+  width: 25%;
+}
+.mSearch-bar input{
+  width: 65%;
+  padding: 10px;
+  color: black;
+  outline: none;
+}
+.mSearch-bar button{
+  background: gray;
+  padding: 15px;
+  vertical-align: bottom;
 }
 .cart{
   width: 30%;
@@ -510,11 +544,7 @@ footer .ulist{
 footer .uptoDate{
   width: 100%;
 }
-footer .heading svg{
-  display: block;
-  align-self: center;
-  color: white;
-}
+
 .column{
   display: flex;
   flex-direction: column;
